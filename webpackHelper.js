@@ -38,7 +38,7 @@ export function getEntryPoints(environment){
  * @returns {{path: *|string, filename: string}}
  */
 export function getOutputData(environment){
-    const outputPath = (environment === "PROD") ? ppath('dist') : ppath('src');
+    const outputPath = (environment === "PROD") ? ppath('docs') : ppath('src');
     return {
         path: outputPath,
         filename: 'bundle.[name].[chunkhash].js'
@@ -68,7 +68,7 @@ export function getCopyPlugins(environment){
     return [
         new CopyWebpackPlugin([
             // Put files here that need to be directly copied
-            //  { from: 'src/sampleNonCrisisConfig.json', to: 'sampleNonCrisisConfig.json' },
+            { from: 'src/images/', to: 'images/' },
         ])
     ]
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron, Button } from 'reactstrap';
+import {Jumbotron, Button, Container, Row, Col} from 'reactstrap';
 
 class Home extends React.Component {
     constructor(props) {
@@ -36,21 +36,43 @@ class Home extends React.Component {
      */
     render() {
         let stateValue = this.state.myStateValue || "No value for myStateValue passed in the state";
+        const coverImgUrl = "/images/Cover.jpg" ;
+        const logoImgUrl = "/images/Logo.jpg" ;
+        const fbUrl = "https://www.facebook.com/imagivent/" ;
         console.log("props", this.props, "state", this.state);
         return (
-            <div>
-                <Jumbotron>
-                    <h1 className="display-3">Hello, world!</h1>
-                    <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra
-                        attention to featured content or information.</p>
-                    <hr className="my-2"/>
-                    <p>It uses utility classes for typgraphy and spacing to space content out within the larger
-                        container.</p>
-                    <p className="lead">
-                        <Button color="primary">Learn More</Button>
-                    </p>
-                </Jumbotron>
-            </div>
+            <Container>
+            {/*<div className={"imgContainer"}>
+                <img className={"logoImg"} src={logoImgUrl} />
+                <a href={coverImgUrl}>
+                    <img className={"coverImg"} src={coverImgUrl} />
+                </a>
+            </div>*/}
+                <Row className={"logoImgContainer"}>
+                    <Col>
+                        <a href={fbUrl}>
+                            <img src={logoImgUrl} className={"logoImg"} />
+                        </a>
+                    </Col>
+                </Row>
+                <Row style={{"textAlign": "center", "fontFamily": "cursive"}}>
+                    <Col>
+                        <h1>Under Imagination</h1>
+                        <br/>
+                        <a href={fbUrl}>
+                            <i className={"fa fa-2x fa-facebook-official"}></i>
+                        </a>
+                        <br/><br/>
+                    </Col>
+                </Row>
+                <Row className={"coverImgContainer"}>
+                    <Col>
+                        <a href={coverImgUrl}>
+                            <img src={coverImgUrl} className={"coverImg"} />
+                        </a>
+                    </Col>
+                </Row>
+            </Container>
         );
     }
 }
