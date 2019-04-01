@@ -11463,6 +11463,7 @@ body {
   color: #3c5a99; }
 
 #app {
+  overflow-x: hidden;
   max-width: 100%;
   padding: 0px; }
   #app > .container {
@@ -11484,4 +11485,4 @@ body {
     /*margin-left: 50%;
         transform: translateX(-50%);*/ }
 
-/*# sourceMappingURL=index.affee6669c692069c832bf1dbe3714a8.css.map*/
+/*# sourceMappingURL=index.45735be7378b055f4dad79092bcf44e2.css.map*/
