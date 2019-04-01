@@ -69,6 +69,8 @@ export function getCopyPlugins(environment){
         new CopyWebpackPlugin([
             // Put files here that need to be directly copied
             { from: 'src/images/', to: 'images/' },
+            // Favicon files need to be on root
+            { from: 'src/favicon/', to: './' },
         ])
     ]
 }
