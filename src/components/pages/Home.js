@@ -39,6 +39,7 @@ class Home extends React.Component {
         const coverImgUrl = "images/Cover.jpg" ;
         const logoImgUrl = "images/Logo.jpg" ;
         const fbUrl = "https://www.facebook.com/imagivent/" ;
+        const instaUrl = "https://instagram.com/imagivent/" ;
         console.log("props", this.props, "state", this.state);
         return (
             <Container>
@@ -59,8 +60,11 @@ class Home extends React.Component {
                     <Col>
                         <h1>Under Imagination</h1>
                         <br/>
-                        <a href={fbUrl}>
-                            <i className={"fa fa-2x fa-facebook-official"}></i>
+                        <a href={fbUrl} >
+                            <i className={"fa fa-facebook-official"}></i>
+                        </a>
+                        <a href={instaUrl} className={"icon"}>
+                            <i className={"fa fa-instagram"}></i>
                         </a>
                         <br/><br/>
                     </Col>

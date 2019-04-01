@@ -29,6 +29,30 @@ body {
     color: $facebook-blue;
 }
 
+.fa{
+    margin-right: 10px;
+    font-size: 3em;
+}
+
+.fa-instagram {
+    color: #9c47fc;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    //background: -webkit-linear-gradient(#9c47fc, #356ad2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icon {
+    background-color: #fff;
+    text-align: center;
+    &:hover{
+        text-decoration: none;
+        background-color: transparent;
+    }
+}
+
+
 #app{
     overflow-x: hidden;
     max-width: 100%;
@@ -55,7 +79,7 @@ body {
     text-align: center;
     img{
         background: #fff;
-        max-height: 200px;
+        height: 200px;
         /*margin-left: 50%;
         transform: translateX(-50%);*/
     }
