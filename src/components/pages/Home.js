@@ -36,8 +36,8 @@ class Home extends React.Component {
      */
     render() {
         let stateValue = this.state.myStateValue || "No value for myStateValue passed in the state";
-        const coverImgUrl = "/images/Cover.jpg" ;
-        const logoImgUrl = "/images/Logo.jpg" ;
+        const coverImgUrl = "images/Cover.jpg" ;
+        const logoImgUrl = "images/Logo.jpg" ;
         const fbUrl = "https://www.facebook.com/imagivent/" ;
         console.log("props", this.props, "state", this.state);
         return (
