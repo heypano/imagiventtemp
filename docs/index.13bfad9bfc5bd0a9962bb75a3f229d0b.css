@@ -11462,6 +11462,24 @@ body {
 .fa-facebook-official {
   color: #3c5a99; }
 
+.fa {
+  margin-right: 10px;
+  font-size: 3em; }
+
+.fa-instagram {
+  color: #9c47fc;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.icon {
+  background-color: #fff;
+  text-align: center; }
+  .icon:hover {
+    text-decoration: none;
+    background-color: transparent; }
+
 #app {
   overflow-x: hidden;
   max-width: 100%;
@@ -11481,8 +11499,8 @@ body {
   text-align: center; }
   .logoImgContainer img {
     background: #fff;
-    max-height: 200px;
+    height: 200px;
     /*margin-left: 50%;
         transform: translateX(-50%);*/ }
 
-/*# sourceMappingURL=index.45735be7378b055f4dad79092bcf44e2.css.map*/
+/*# sourceMappingURL=index.13bfad9bfc5bd0a9962bb75a3f229d0b.css.map*/
